@@ -1,2 +1,2 @@
-# dummy-package
-A dummy package to test the new package system
+# dummy-repository
+A dummy repository to test the new package system
