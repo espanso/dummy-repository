@@ -1,2 +1,2 @@
-# dummy-repository
-A dummy repository to test the new package system
+# Veiligheidsbouwstenen Algemeen
+Veiligheidsbouwstenen Algemeen Package
