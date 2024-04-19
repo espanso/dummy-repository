@@ -1,2 +1,2 @@
-# Veiligheidsbouwstenen Algemeen
-Veiligheidsbouwstenen Algemeen Package
+# Veiligheidsbouwstenen Espanso Packages
+Alle packages voor heel Veiligheidsbouwstenen en Applicatiediensten
