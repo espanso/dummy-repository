@@ -129,11 +129,21 @@ matches:
 
   # Print Toepassing goedgekeurd
   - trigger: ":TOK:"
-    replace: "Toepassing goedgekeurd" 
+    replace: "Toepassing {{f3.toepassing}} goedgekeurd"
+    vars:
+      - name: f3
+        type: form
+        params:
+          layout: Wat is de naam van de toepassing? [[toepassing]]
 
   # Print Toepassing goedgekeurd
   - trigger: ";tok;"
-    replace: "Toepassing goedgekeurd" 
+    replace: "Toepassing {{f3.toepassing}} goedgekeurd"
+    vars:
+      - name: f3
+        type: form
+        params:
+          layout: Wat is de naam van de toepassing? [[toepassing]]
 
   # Print mail dcb cert
   - trigger: ":MAILDCBAAS:"
