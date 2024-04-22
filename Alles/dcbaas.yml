@@ -43,7 +43,7 @@ matches:
 
   # Print Revoke DCBaaS
   - trigger: "pkir"
-    replace: "The active certificates of the following devices have been revoked: | \n{{f1.revoke}}"
+    replace: "The active certificates of the following devices have been revoked:\n{{f1.revoke}}"
     vars:
       - name: f1
         type: form
