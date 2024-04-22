@@ -43,7 +43,12 @@ matches:
 
   # Print Revoke DCBaaS
   - trigger: "pkir"
-    replace: "The active certificates of the following devices have been revoked: | \n"
+    replace: "The active certificates of the following devices have been revoked: | \n{{f1.revoke}}"
+    vars:
+      - name: f1
+        type: form
+        params:
+          layout:Welk toestel dient er gereoked te worden?  [[revoke]].
 
  # Print MAGDA Aanvraag Toepassing standaard tekst
 
