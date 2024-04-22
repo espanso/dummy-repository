@@ -1,0 +1,208 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+  # Simple text replacement
+  - trigger: ":espanso"
+    replace: "Hi there!"
+
+  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
+
+  # But matches can also be dynamic:
+
+  # Print the current date
+  - trigger: "ddd"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d/%m/%Y"
+
+  # Print the current date
+  - trigger: "ttt"
+    replace: "{{mytime}}"
+    vars:
+      - name: mytime
+        type: date
+        params:
+          format: "%h:%M"
+
+  # Print the output of a shell command
+  - trigger: ":shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo 'Hello from your shell'"
+
+
+    # Print Power Query editor Sharepoint Connects PO Team
+  - trigger: "PQEPO"
+    replace: 'Root = SharePoint.Contents("https://vlaamseoverheid.sharepoint.com/sites/msteams_6d0f6e-POTeam/", [ApiVersion = 15])'
+
+    # Print Power Query editor Sharepoint Connects PO Team
+  - trigger: "PQEOnd"
+    replace: 'Root = SharePoint.Contents("https://vlaamseoverheid.sharepoint.com/sites/msteams_6d0f6e-Ondersteuner", [ApiVersion = 15])'
+
+    # Print Power Query editor Onedrive
+  - trigger: "PQEOD"
+    replace: 'Root = SharePoint.Contents("https://vlaamseoverheid-my.sharepoint.com/personal/mark_lemmens_vlaanderen_be", [ApiVersion = 15])'
+
+    # Print Power Query editor Sharepoint Rapportering
+  - trigger: "PQER"
+    replace: 'Root = SharePoint.Contents("https://vlaamseoverheid.sharepoint.com/sites/msteams_6d0f6e-rapportering", [ApiVersion = 15])'
+
+    # Print HTB
+  - trigger: ":htb"
+    replace: "HTB(Hoofd Toegangsbeheerder)?"
+
+    # Print KBO ea
+  - trigger: ":kbo"
+    replace: "Heb je KBOnummer/instellingsnummer/OVO Code?"
+
+    # Print Eeerste HLB LB
+  - trigger: ":ehlb"
+    replace: "https://vls.vlaanderen.be/acm-idm/article/12579ef0-3433-4503-b234-01f45e5e4018"
+
+    #verkeerd schrijven mailadres
+  - trigger: "maialdres"
+    replace: "mailadres"
+
+  # Print vermoeden
+  - trigger: "vermeoden"
+    replace: "vermeoden"
+  
+  # Print juist
+  - trigger: "jusit"
+    replace: "juist"
+
+  # Print zonder
+  - trigger: "zodner"
+    replace: "zonder"
+
+  # Print nieuw
+  - trigger: "niuew"
+    replace: "nieuw"
+
+  # Print gelieve
+  - trigger: "geleive"
+    replace: "gelieve"
+
+  # Print niet
+  - trigger: "neit"
+    replace: "niet"
+
+  # Print PQE
+  - trigger: "PQE"
+    word: true
+    replace: "Power Query Editor"
+  
+  # Print PQE
+  - trigger: "pqe"
+    word: true
+    replace: "power query editor"
+
+  # Print odnernemingsnummer 
+  - trigger: "odnernemingsnummer"
+    word: true
+    replace: "ondernemingsnummer"
+
+  # Print Michiel van Cauwenberge
+  - trigger: "MVC"
+    word: true
+    replace: "Michiel Van Cauwenberge" 
+
+  # Print Geert Lauwaert
+  - trigger: "GL"
+    word: true
+    replace: "Geert Lauwaert" 
+
+  # Print Mark Lemmens
+  - trigger: "ML"
+    word: true
+    replace: "Mark Lemmens" 
+
+  # Print Werner Wolfs
+  - trigger: "WW"
+    word: true
+    replace: "Werner Wolfs" 
+
+  # Print Esma Labras
+  - trigger: "EL"
+    word: true
+    replace: "Esma Labras" 
+
+  # Print Arnoud Sauwen
+  - trigger: "AS"
+    word: true
+    replace: "Arnoud Sauwen" 
+
+  # Print Stef Van den Brandt
+  - trigger: "SVDB"
+    word: true
+    replace: "Stef Van den Brandt" 
+
+  # Print Bart Mot
+  - trigger: "BM"
+    word: true
+    replace: "Bart Mot" 
+  
+  # Print Myrddin Andries
+  - trigger: "MA"
+    word: true
+    replace: "Myrddin Andries" 
+
+  # Print Toon Van Camp
+  - trigger: "TVC"
+    word: true
+    replace: "Toon Van Camp" 
+
+  # Print Aleksander Suykerbuyk
+  - trigger: "SA"
+    word: true
+    replace: "Aleksander Suykerbuyk" 
+  
+  # Print Michael Hayen
+  - trigger: "MH:"
+    word: true
+    replace: "Michael Hayen" 
+
+  # Print Welke doelgroep
+  - trigger: "wdg?"
+    word: true
+    replace: "welke doelgroep?" 
+
+  # Print Beste wensen
+  - trigger: "bestew"
+    word: true
+    replace: "Beste wensen voor 2024. Dat minstens 1 droom mag uitkomen die op uw lijst staat. Meer mag ook natuurlijk" 
+
+  # Print Allereerst BW
+  - trigger: "allerbestew"
+    replace: "Allereerst beste wensen voor 2024.\nDat minstens 1 droom mag uitkomen die op uw lijst staat.\nMeer mag ook natuurlijk\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  # And much more! For more information, visit the docs: https://espanso.org/docs/

@@ -1,0 +1,19 @@
+matches:
+
+  #Print Veiligheidsbouwstenen
+  - trigger: ":vb:"
+    replace: "Veiligheidsbouwstenen"
+
+  # Print Publieke Confluence URL
+  - trigger: ":GAEP:"
+    replace: "https://vlaamseoverheid.atlassian.net/wiki/spaces/GAEP/overview"
+
+  # Print interne Confluence URL
+  - trigger: ":APD:"
+    replace: "https://vlaamseoverheid.atlassian.net/wiki/spaces/APD/overview"
+
+  # Print Vlaanderen Website
+  - trigger: ":Vl:"
+    replace: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten"
+
+  

@@ -1,0 +1,571 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+
+  # Print DHM Mogelijkheden
+  - trigger: ":DHM?:"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: choice
+        params:
+          values:
+            - label: "APIWebsite Vlaanderen"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/starten-met-de-digitale-handtekenmap#je-organisatie-wenst-een-applicatie-te-integreren-met-de-dienst-digitaal-tekenen"
+            - label: "API Aanvraag Procedure"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/starten-met-de-digitale-handtekenmap/api-integratie-met-de-handtekenmap"
+            - label: "API SH Documentatie 8.2"
+              id: "https://manuals.ascertia.com/SigningHub/8.2/Api/#tag/Welcome"
+            - label: "API SH Documentatie 8.4"
+              id: "https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Welcome"
+            - label: "Aanvraag voor API integratie Digitale Handtekenmap"
+              id: "https://forms.office.com/Pages/ResponsePage.aspx?id=pjgDDGGV6E641k6Jy9UgoI42DMiNiQFBsFe_tm4B4EpUOTRDQzg0RU5UMDM1TktaQkFBNk9GWTUwTSQlQCN0PWcu"
+            - label: "benodigdheden DHM"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/praktisch-onderteken-digitaal#benodigdheden"
+            - label: "Handleidingen DHM"
+              id: "https://confluence.voalm.vlaanderen.be/pages/viewpage.action?pageId=92997935"
+            - label: "DHM interne Confluence"
+              id: "https://confluence.voalm.vlaanderen.be/pages/viewpage.action?spaceKey=APD&title=Handtekenmap"
+            - label: "DHM Test pagina"
+              id: "https://ksc-vo.keysign.eu/app/readers"
+            - label: "DHM Website"
+              id: "https://handtekenmap.vlaanderen.be"
+            - label: "DHM TI Website"
+              id: "https://handtekenmap-ti.vlaanderen.be"
+            - label: "IDM Website"
+              id: "https://gebruikersbeheer.vlaanderen.be"
+            - label: "IDM TI Website"
+              id: "https://gebruikersbeheer-ti.vlaanderen.be"
+            - label: "DCBaaS Website"
+              id: "https://dcb.vlaanderen.be"
+
+# Print DHM Mogelijkheden
+  - trigger: ":dhm?:"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: choice
+        params:
+          values:
+            - label: "APIWebsite Vlaanderen"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/starten-met-de-digitale-handtekenmap#je-organisatie-wenst-een-applicatie-te-integreren-met-de-dienst-digitaal-tekenen"
+            - label: "API Aanvraag Procedure"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/starten-met-de-digitale-handtekenmap/api-integratie-met-de-handtekenmap"
+            - label: "API SH Documentatie 8.2"
+              id: "https://manuals.ascertia.com/SigningHub/8.2/Api/#tag/Welcome"
+            - label: "API SH Documentatie 8.4"
+              id: "https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Welcome"
+            - label: "Aanvraag voor API integratie Digitale Handtekenmap"
+              id: "https://forms.office.com/Pages/ResponsePage.aspx?id=pjgDDGGV6E641k6Jy9UgoI42DMiNiQFBsFe_tm4B4EpUOTRDQzg0RU5UMDM1TktaQkFBNk9GWTUwTSQlQCN0PWcu"
+            - label: "benodigdheden DHM"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/praktisch-onderteken-digitaal#benodigdheden"
+            - label: "Handleidingen DHM"
+              id: "https://confluence.voalm.vlaanderen.be/pages/viewpage.action?pageId=92997935"
+            - label: "DHM interne Confluence"
+              id: "https://confluence.voalm.vlaanderen.be/pages/viewpage.action?spaceKey=APD&title=Handtekenmap"
+            - label: "DHM Test pagina"
+              id: "https://ksc-vo.keysign.eu/app/readers"
+            - label: "DHM Website"
+              id: "https://handtekenmap.vlaanderen.be"
+            - label: "DHM TI Website"
+              id: "https://handtekenmap-ti.vlaanderen.be"
+            - label: "IDM Website"
+              id: "https://gebruikersbeheer.vlaanderen.be"
+            - label: "IDM TI Website"
+              id: "https://gebruikersbeheer-ti.vlaanderen.be"
+            - label: "DCBaaS Website"
+              id: "https://dcb.vlaanderen.be"
+
+# Print DHM Mogelijkheden
+  - trigger: "DHM???"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: choice
+        params:
+          values:
+            - label: "APIWebsite Vlaanderen"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/starten-met-de-digitale-handtekenmap#je-organisatie-wenst-een-applicatie-te-integreren-met-de-dienst-digitaal-tekenen"
+            - label: "API Aanvraag Procedure"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/starten-met-de-digitale-handtekenmap/api-integratie-met-de-handtekenmap"
+            - label: "API SH Documentatie 8.2"
+              id: "https://manuals.ascertia.com/SigningHub/8.2/Api/#tag/Welcome"
+            - label: "API SH Documentatie 8.4"
+              id: "https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Welcome"
+            - label: "Aanvraag voor API integratie Digitale Handtekenmap"
+              id: "https://forms.office.com/Pages/ResponsePage.aspx?id=pjgDDGGV6E641k6Jy9UgoI42DMiNiQFBsFe_tm4B4EpUOTRDQzg0RU5UMDM1TktaQkFBNk9GWTUwTSQlQCN0PWcu"
+            - label: "benodigdheden DHM"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/praktisch-onderteken-digitaal#benodigdheden"
+            - label: "Handleidingen DHM"
+              id: "https://confluence.voalm.vlaanderen.be/pages/viewpage.action?pageId=92997935"
+            - label: "DHM interne Confluence"
+              id: "https://confluence.voalm.vlaanderen.be/pages/viewpage.action?spaceKey=APD&title=Handtekenmap"
+            - label: "DHM Test pagina"
+              id: "https://ksc-vo.keysign.eu/app/readers"
+            - label: "DHM Website"
+              id: "https://handtekenmap.vlaanderen.be"
+            - label: "DHM TI Website"
+              id: "https://handtekenmap-ti.vlaanderen.be"
+            - label: "IDM Website"
+              id: "https://gebruikersbeheer.vlaanderen.be"
+            - label: "IDM TI Website"
+              id: "https://gebruikersbeheer-ti.vlaanderen.be"
+            - label: "DCBaaS Website"
+              id: "https://dcb.vlaanderen.be"
+
+# Print DHM Mogelijkheden
+  - trigger: "dhm???"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: choice
+        params:
+          values:
+            - label: "APIWebsite Vlaanderen"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/starten-met-de-digitale-handtekenmap#je-organisatie-wenst-een-applicatie-te-integreren-met-de-dienst-digitaal-tekenen"
+            - label: "API Aanvraag Procedure"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/starten-met-de-digitale-handtekenmap/api-integratie-met-de-handtekenmap"
+            - label: "API SH Documentatie 8.2"
+              id: "https://manuals.ascertia.com/SigningHub/8.2/Api/#tag/Welcome"
+            - label: "API SH Documentatie 8.4"
+              id: "https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Welcome"
+            - label: "Aanvraag voor API integratie Digitale Handtekenmap"
+              id: "https://forms.office.com/Pages/ResponsePage.aspx?id=pjgDDGGV6E641k6Jy9UgoI42DMiNiQFBsFe_tm4B4EpUOTRDQzg0RU5UMDM1TktaQkFBNk9GWTUwTSQlQCN0PWcu"
+            - label: "benodigdheden DHM"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/praktisch-onderteken-digitaal#benodigdheden"
+            - label: "Handleidingen DHM"
+              id: "https://confluence.voalm.vlaanderen.be/pages/viewpage.action?pageId=92997935"
+            - label: "DHM interne Confluence"
+              id: "https://confluence.voalm.vlaanderen.be/pages/viewpage.action?spaceKey=APD&title=Handtekenmap"
+            - label: "DHM Test pagina"
+              id: "https://ksc-vo.keysign.eu/app/readers"
+            - label: "DHM Website"
+              id: "https://handtekenmap.vlaanderen.be"
+            - label: "DHM TI Website"
+              id: "https://handtekenmap-ti.vlaanderen.be"
+            - label: "IDM Website"
+              id: "https://gebruikersbeheer.vlaanderen.be"
+            - label: "IDM TI Website"
+              id: "https://gebruikersbeheer-ti.vlaanderen.be"
+            - label: "DCBaaS Website"
+              id: "https://dcb.vlaanderen.be"
+
+  # Print DHM APIWebsite Vlaanderen
+  - trigger: "APIWebVl"
+    replace: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/starten-met-de-digitale-handtekenmap#je-organisatie-wenst-een-applicatie-te-integreren-met-de-dienst-digitaal-tekenen"
+  
+  # Print DHM API Aanvraag Procedure
+  - trigger: "APIAanPro"
+    replace: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/starten-met-de-digitale-handtekenmap/api-integratie-met-de-handtekenmap"
+
+  # Print DHM SH API Doc
+  - trigger: "APISHDoc"
+    replace: "https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Welcome"
+  
+  # Print Aanvraag voor API integratie Digitale Handtekenmap
+  - trigger: "PAPI"
+    replace: "https://forms.office.com/Pages/ResponsePage.aspx?id=pjgDDGGV6E641k6Jy9UgoI42DMiNiQFBsFe_tm4B4EpUOTRDQzg0RU5UMDM1TktaQkFBNk9GWTUwTSQlQCN0PWcu"
+
+  # Print benodigdheden DHM
+  - trigger: "KSC:"
+    word: true
+    replace: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/praktisch-onderteken-digitaal#benodigdheden"
+
+  # Print Handleidingen DHM
+  - trigger: "DO-PC"
+    replace: "https://vlaamseoverheid.atlassian.net/wiki/spaces/GAEP/pages/6377406908/Digitaal+Ondertekenen"
+  
+  # Print DHM interne Confluence
+  - trigger: "DO-IC"
+    replace: "https://vlaamseoverheid.atlassian.net/wiki/spaces/APD/pages/6375738787/Digitaal+Ondertekenen+voor+Ondersteuners"
+
+  # Print DHM Test pagina
+  - trigger: "DO-Test"
+    replace: "https://ksc-vo.keysign.eu/app/readers"
+  
+  # Print IDM Website
+  - trigger: "IDM-Web"
+    replace: "https://gebruikersbeheer.vlaanderen.be"
+
+  # Print IDM TI Website
+  - trigger: "IDM-TI-Web"
+    replace: "https://gebruikersbeheer-ti.vlaanderen.be"
+
+
+    # Print MVG DOT
+  - trigger: "mDOT"
+    replace: "\nMet vriendelijke groeten\nDigitaal Ondertekenen Team"
+
+    # Print MVG DOT
+  - trigger: "mdot"
+    replace: "\nMet vriendelijke groeten\nDigitaal Ondertekenen Team"
+
+
+    # Print Website DO TI
+  - trigger: "doti"
+    word: true
+    replace: "https://digitaal-ondertekenen-ti.vlaanderen.be"
+
+    # Print Website DO
+  - trigger: ":do"
+    replace: "https://digitaal-ondertekenen.vlaanderen.be"
+
+    # Print Website DO
+  - trigger: "doapi"
+    word: true
+    replace: "https://digitaal-ondertekenen-api.vlaanderen.be"
+
+    # Print Website DO
+  - trigger: "doapiti"
+    word: true
+    replace: "https://digitaal-ondertekenen-api-ti.vlaanderen.be"
+
+    # Print Website DO
+  - trigger: "doa;"
+    word: true
+    replace: "https://digitaal-ondertekenen-api.vlaanderen.be"
+
+    # Print Website DO
+  - trigger: "doat;"
+    word: true
+    replace: "https://digitaal-ondertekenen-api-ti.vlaanderen.be"
+
+
+    # Print PO naam DO
+  - trigger: "podo"
+    replace: "Tomas Fülöpp (Product Owner Digitaal Ondertekenen)"
+
+    # Print MVG M PO Team DO
+  - trigger: "mvgm"
+    replace: "Met vriendelijke groeten\nMark\nTeam Digitaal Ondertekenen"
+
+    # Print MVG M PO Team DO
+  - trigger: "amvgm"
+    replace: "Alvast bedankt\n\nMet vriendelijke groeten\nMark\nTeam Digitaal Ondertekenen"
+
+
+   # Print Cleanup nodig voor verplaatsing org
+  - trigger: "OldNew"
+    replace: |
+             Doe eerst een reprov en kijk na of er geen Master verkeerd staat.
+             Maak een ticket aan richting ZC met daarin de volgende gegevens:
+
+             - VOID:
+             - Oude orgcode:
+             - Nieuwe orgcode:
+             - Oud e-mailadres:
+             - Nieuw e-mailadres:
+
+             en meldt dat ze een volledige cleanup doen.
+
+  # Print Cleanup nodig voor ophalen gegevens is mislukt
+  - trigger: "Cleanie"
+    replace: |
+              Doe eerst een reprov.
+              Maak een ticket aan richting ZC met vermelding van de volgende gegevens:
+
+              - VOID:
+              - orgcode:
+              - Voornaam:
+              - Familienaam:
+              - e-mailadres:
+
+              En vraag om een cleanup te doen wegens de foutmelding ophalen gegevens is mislukt.
+
+  # Print Digitaal Ondertekenen
+  - trigger: "DO:"
+    replace: "Digitaal Ondertekenen"
+
+  # Print Digitaal Ondertekenen
+  - trigger: "do;"
+    word: true
+    replace: "Digitaal Ondertekenen"
+
+  # Print Digitaal Ondertekenen
+  - trigger: "DO:."
+    word: true
+    replace: "Digitaal Ondertekenen."
+
+  # Print Digitaal Ondertekenen
+  - trigger: "do;."
+    word: true
+    replace: "Digitaal Ondertekenen."
+
+  # Print Digitaal Ondertekenen
+  - trigger: "(DO:)"
+    word: true
+    replace: "Digitaal Ondertekenen"
+
+  # Print Digitaal Ondertekenen
+  - trigger: "(do;)"
+    word: true
+    replace: "(Digitaal Ondertekenen)"
+
+  # Print Dienstenleverancier DO
+  - trigger: "DL:"
+    word: true
+    replace: "dienstenleverancier (CEVI, Cipal, GreenValley, Remmicom,…)"
+
+  # Print Dienstenleverancier DO
+  - trigger: "dl;"
+    word: true
+    replace: "dienstenleverancier (CEVI, Cipal, GreenValley, Remmicom,…)"
+
+  # Print TU?
+  - trigger: "TU?:"
+    word: true
+    replace: "Een “technical user” is een gebruiker die gekoppeld is aan een toepassing van een dienstleverancier (CEVI, Cipal, GreenValley, Remmicom,…)."
+
+  # Print TU?
+  - trigger: "tu?;"
+    word: true
+    replace: "Een “technical user” is een gebruiker die gekoppeld is aan een toepassing van een dienstleverancier (CEVI, Cipal, GreenValley, Remmicom,…)."
+
+
+  # Print ww reset
+  - trigger: "WW:"
+    word: true
+    replace: "Hiervoor gaan jullie ook nog een mail ontvangen met een link voor een wachtwoordreset uit te voeren."
+
+  # Print ww reset
+  - trigger: "ww;"
+    word: true
+    replace: "Hiervoor gaan jullie ook nog een mail ontvangen met een link voor een wachtwoordreset uit te voeren."
+
+  # Print TU
+  - trigger: "tu;"
+    replace: "technical user"
+
+  # Print TU
+  - trigger: "TU:"
+    replace: "Technical User"
+  
+  # Print Blok SP
+  - trigger: "SPB:"
+    word: true
+    replace: "Doe de aanpassing in de volgende Sharepoint lijst:\n https://vlaamseoverheid.sharepoint.com/sites/msteams_6d0f6e-Ondersteuner/Lists/MigratieBlokken/AllItems.aspx?skipSignal=true \nAan de hand van volgende confluence pagina:\n https://vlaamseoverheid.atlassian.net/wiki/spaces/APD/pages/6385107119/Wijzigingen+in+blokken"
+
+  # Print Blok SP
+  - trigger: "spb;"
+    word: true
+    replace: "Doe de aanpassing in de volgende Sharepoint lijst:\n https://vlaamseoverheid.sharepoint.com/sites/msteams_6d0f6e-Ondersteuner/Lists/MigratieBlokken/AllItems.aspx?skipSignal=true \nAan de hand van volgende confluence pagina:\n https://vlaamseoverheid.atlassian.net/wiki/spaces/APD/pages/6385107119/Wijzigingen+in+blokken"
+
+  # Print Blok SP
+  - trigger: "Spb;"
+    word: true
+    replace: "Doe de aanpassing in de volgende Sharepoint lijst:\n https://vlaamseoverheid.sharepoint.com/sites/msteams_6d0f6e-Ondersteuner/Lists/MigratieBlokken/AllItems.aspx?skipSignal=true \nAan de hand van volgende confluence pagina:\n https://vlaamseoverheid.atlassian.net/wiki/spaces/APD/pages/6385107119/Wijzigingen+in+blokken"
+
+
+  # Print Danny Van Steenbergen
+  - trigger: "DVS"
+    word: true
+    replace: "Danny Van Steenbergen" 
+  
+  # Print Danny VS Mail
+  - trigger: "DVSM"
+    replace: "danny.vansteenbergen@zeticon.com" 
+  
+  # Print Bart Rasschaert
+  - trigger: "BR"
+    word: true
+    replace: "Bart Rasschaert" 
+  
+  # Print Bart R Mail
+  - trigger: "BRM"
+    replace: "bart.rasschaert@zeticon.com" 
+
+  # Print Artiom Choults
+  - trigger: "AC"
+    word: true
+    replace: "Artiom Choults" 
+
+  # Print Tomas Fulopp]
+  - trigger: "TF:"
+    word: true
+    replace: "Tomas Fülöpp" 
+
+  # Print Matthias Van Gremberghe
+  - trigger: "MVG"
+    word: true
+    replace: "Matthias Van Gremberghe" 
+
+  # Print Mail Matthias Van Gremberghe
+  - trigger: ":MVG"
+    word: true
+    replace: "Matthias.VanGremberghe@zeticon.com" 
+
+
+  # Print Digitaal Ondertekenen Premium Afnemer
+  - trigger: "DOPA"
+    replace: "Digitaal Ondertekenen Premium Afnemer" 
+
+  # Print Digitaal Ondertekenen Afnemer
+  - trigger: "DOA:"
+    replace: "Digitaal Ondertekenen Afnemer" 
+
+  # Print Toegang Digitaal Ondertekenen omgeving
+  - trigger: ":TDO"
+    replace: "Toegang Digitaal Ondertekenen omgeving" 
+
+  # Print alle API info Digitaal Ondertekenen
+  - trigger: "FullAPI:"
+    word: true
+    replace: " API URL T&I:\n https://digitaal-ondertekenen-api-ti.vlaanderen.be \n\n URL T&I: \n https://digitaal-ondertekenen-ti.vlaanderen.be \n\n API URL PROD: \n https://digitaal-ondertekenen-api.vlaanderen.be \n\n URL PROD \n https://digitaal-ondertekenen.vlaanderen.be \n\n Informatie op Confluence: \n https://vlaamseoverheid.atlassian.net/wiki/spaces/GAEP/pages/6377410057/Wat+wijzigt+er+voor+bestaande+integraties \n https://vlaamseoverheid.atlassian.net/wiki/spaces/GAEP/pages/6377410039/Wat+voor+wijzigingen+dien+ik+te+doen+als+API+integrator" 
+
+  # Print DO hulp
+  - trigger: "DO1:"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: choice
+        params:
+          values:
+            - label: "DO API Vlaanderen"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/starten-met-digitaal-ondertekenen/api-integratie-met-digitaal-ondertekenen"
+            - label: "API Endpoints"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/starten-met-digitaal-ondertekenen/api-integratie-met-digitaal-ondertekenen#api-endpoints"
+            - label: "API SH Documentatie 8.4"
+              id: "https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Welcome"
+            - label: "Aanvraag voor API integratie Digitale Handtekenmap"
+              id: "https://forms.office.com/Pages/ResponsePage.aspx?id=pjgDDGGV6E641k6Jy9UgoI42DMiNiQFBsFe_tm4B4EpUOTRDQzg0RU5UMDM1TktaQkFBNk9GWTUwTSQlQCN0PWcu"
+            - label: "API Endpoint PROD"
+              id: "https://digitaal-ondertekenen-api.vlaanderen.be"
+            - label: "API Endpoint T&I"
+              id: "https://digitaal-ondertekenen-api-ti.vlaanderen.be"
+            - label: "Migratievragen API"
+              id: "https://vlaamseoverheid.atlassian.net/wiki/spaces/GAEP/pages/6377410057/Wat+wijzigt+er+voor+bestaande+integraties"
+            - label: "Migratietraject"
+              id: "https://vlaamseoverheid.atlassian.net/wiki/spaces/GAEP/pages/6377410043/Migratie+traject"
+            - label: "Website Digitaal Ondertekenen"
+              id: "https://digitaal-ondertekenne.vlaanderen.be"
+            - label: "Website Digitaal Ondertekenen T&I"
+              id: "https://digitaal-ondertekenen-ti.vlaanderen.be"
+            - label: "Full API"
+              id: "API URL T&I:\n https://digitaal-ondertekenen-api-ti.vlaanderen.be \n\n URL T&I: \n https://digitaal-ondertekenen-ti.vlaanderen.be \n\n API URL PROD: \n https://digitaal-ondertekenen-api.vlaanderen.be \n\n URL PROD \n https://digitaal-ondertekenen.vlaanderen.be \n\n Informatie op Confluence: \n https://vlaamseoverheid.atlassian.net/wiki/spaces/GAEP/pages/6377410057/Wat+wijzigt+er+voor+bestaande+integraties \n https://vlaamseoverheid.atlassian.net/wiki/spaces/GAEP/pages/6377410039/Wat+voor+wijzigingen+dien+ik+te+doen+als+API+integrator"
+            - label: "DO Vlaanderen.be"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitaal-ondertekenen"
+
+# Print DO Hulp2
+
+  - trigger: "DO2:"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: choice
+        params:
+          values:
+            - label: "benodigdheden DO"
+              id: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/praktisch-onderteken-digitaal#benodigdheden"
+            - label: "Handleidingen DHM"
+              id: "https://confluence.voalm.vlaanderen.be/pages/viewpage.action?pageId=92997935"
+            - label: "DO interne Confluence"
+              id: "https://confluence.voalm.vlaanderen.be/pages/viewpage.action?spaceKey=APD&title=Handtekenmap"
+            - label: "DO Test pagina"
+              id: "https://ksc-vo.keysign.eu/app/readers"
+            - label: "Volledige API Calls"
+              id: "1: https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Authentication/operation/Authentication_ClientCredential \n2: https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Document-Package/operation/V4_Attachment_DownloadBase64Attachment \n3: https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Document-Package/operation/V4_Documents_UploadBase64 \n4: https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Document-Workflow/operation/V4_Workflow_WorkflowAddUser (afhaneklijk van aantal users meermaals te callen)\n5: https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Document-Preparation/operation/V4_Fields_AutoPlace (afhaneklijk van aantal users meermaals te callen)\n6: https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Document-Package/operation/V4_Workflow_StartWorkflow:~:text=Download%2C%20and%20Share.-,Share%20Document%20Package,-Business%20applications%20can"
+            - label: "Webhooks informatie"
+              id: "https://manuals.ascertia.com/SigningHub/8.4/Web/Configuredocumentaccessibilitypr.html"
+            - label: "DHM Website"
+              id: "https://handtekenmap.vlaanderen.be"
+            - label: "DHM TI Website"
+              id: "https://handtekenmap-ti.vlaanderen.be"
+            - label: "IDM Website"
+              id: "https://gebruikersbeheer.vlaanderen.be"
+            - label: "IDM TI Website"
+              id: "https://gebruikersbeheer-ti.vlaanderen.be"
+            - label: "DCBaaS Website"
+              id: "https://dcb.vlaanderen.be"
+
+  # Print DO Hulp Totaal
+
+  - trigger: "DOHulp:"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: choice
+        params:
+          values:
+            - label: "DOHulp1"
+              id: "DOHulp1:"
+            - label: "DOHulp2"
+              id: "D"
+
+  # Print Stappenplan API calls
+  - trigger: "APICallDO"
+    word: true
+    replace: "1: https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Authentication/operation/Authentication_ClientCredential \n2: https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Document-Package/operation/V4_Attachment_DownloadBase64Attachment \n3: https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Document-Package/operation/V4_Documents_UploadBase64 \n4: https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Document-Workflow/operation/V4_Workflow_WorkflowAddUser (afhaneklijk van aantal users meermaals te callen)\n5: https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Document-Preparation/operation/V4_Fields_AutoPlace (afhaneklijk van aantal users meermaals te callen)\n6: https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Document-Package/operation/V4_Workflow_StartWorkflow:~:text=Download%2C%20and%20Share.-,Share%20Document%20Package,-Business%20applications%20can" 
+
+  # Print Webhooks SigningHub info
+  - trigger: "Webhooksinfo"
+    word: true
+    replace: "https://manuals.ascertia.com/SigningHub/8.4/Web/Configuredocumentaccessibilitypr.html" 
+
+  # Print Digitaal Ondertekenen Connector
+  - trigger: "DOC:"
+    replace: "Digitaal Ondertekenen Connector" 
+
+  # Print Digitaal Ondertekenen Connector
+  - trigger: "doc:"
+    replace: "Digitaal Ondertekenen Connector" 
+
+  # Print Digitaal Ondertekenen Connector
+  - trigger: "doc;"
+    replace: "Digitaal Ondertekenen Connector" 
+
+  # Print Handleiding Digitaal Ondertekenen Eindgebruikers
+  - trigger: "HaDOE"
+    word: true
+    replace: " Handleiding Digitaal Ondertekenen Eindgebruikers:\n https://vlaamseoverheid.atlassian.net/wiki/spaces/GAEP/pages/6454739011" 
+
+  # Print migratie v4 DO API
+  - trigger: "mapiv4"
+    word: true
+    replace: "Op de volgende website vind je alle wijzigingen die er dienen te gebeuren om je integratie v4 compliant te maken:\n\nhttps://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Migration"   
+
+  # Print DO | 
+  - trigger: "DO|"
+    replace: "Digitaal Ondertekenen | " 
+
+  # Print DO Team
+  - trigger: "DOT:"
+    replace: "Digitaal Ondertekenen Team" 
+
+  # Print  | Digitaal Ondertekenen Intake
+  - trigger: "DOI:"
+    replace: " | Digitaal Ondertekenen Intake" 
+  
+  # Print  | Digitaal Ondertekenen Intake
+  - trigger: "doi;"
+    replace: " | Digitaal Ondertekenen Intake" 
+
+  # Print Digitaal Ondertekenen
+  - trigger: "do;"
+    replace: "Digitaal Ondertekenen" 
+
+  # Print Digitaal Ondertekenen Team
+  - trigger: "dot;"
+    replace: "Digitaal Ondertekenen Team" 
+
+  # Print Digitaal Ondertekenen met context Beheerder of Gebruiker
+  - trigger: "DOR:"
+    replace: "Digitaal Ondertekenen met context Beheerder of Gebruiker"
+
+  # Print Digitaal Ondertekenen met context Beheerder of Gebruiker
+  - trigger: "dor;"
+    replace: "Digitaal Ondertekenen met context Beheerder of Gebruiker"
+
+  # Print Digitaal Ondertekenen Automatisaties | 
+  - trigger: "DOA|"
+    replace: "Digitaal Ondertekenen Automatisaties | "
+  
+  # Print Digitaal Ondertekenen Integraties ID
+  - trigger: "DOID:"
+    replace: "Digitaal Ondertekenen Integraties ID" 

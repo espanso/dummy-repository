@@ -1,0 +1,33 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches: 
+ 
+  # Print Trigger
+  - trigger: "-t"
+    word: true
+    replace: "- trigger: \"\"\n    replace: \"\""
+
+  # Print Trigger
+  - trigger: "-tw"
+    word: true
+    replace: "- trigger: \"\"\n    word: true\n    replace: \"\""
+
+  # Print Label:
+  - trigger: "-lbl"
+    replace: "- label: \"\"\n              id: \"\"" 
+
+  # Print Espanso keuzelijst
+  - trigger: "-tk"
+    replace: "- trigger: \"\"\n    replace: \"{{output}}\"\n    vars:\n      - name: output\n        type: choice\n        params:\n          values:\n            - label: \"\"\n              id: \"\"\n"
+
+  # Print Tekst met datum Espanso tag
+
+  - trigger: "-td"
+    replace: "- trigger: \"\"\n    replace: \"({{datumpje}}\"\n    vars:\n      - name: datumpje\n        type: date\n        params:\n          format: \"%d/%m/%Y\""
