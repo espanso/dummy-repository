@@ -109,13 +109,23 @@ matches:
   - trigger: "mvgd"
     replace: "Met vriendelijke groeten\nTeam DCBaaS"
 
-  # Print Domein geodgekeurd
+  # Print Domein goedgekeurd
   - trigger: ":DOK:"
-    replace: "Domein goedgekeurd" 
+    replace: "Domein {{f2.domein}} goedgekeurd" 
+    vars:
+      - name: f2
+        type: form
+        params:
+          layout: Wat is de naam van het domein? [[domein]]
 
   # Print Domein goedgekeurd
   - trigger: ";dok;"
-    replace: "Domein goedgekeurd" 
+    replace: "Domein {{f2.domein}} goedgekeurd" 
+    vars:
+      - name: f2
+        type: form
+        params:
+          layout: Wat is de naam van het domein? [[domein]]
 
   # Print Toepassing goedgekeurd
   - trigger: ":TOK:"
