@@ -1,0 +1,135 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+
+  # Print SMS certaanmaken
+  - trigger: ":SMS:"
+    replace: "Dag \nHierbij het wachtwoord voor :\n\n\n\nMet vriendelijke groeten\nDCBaaS Team"
+
+  # Print SMS certaanmaken
+  - trigger: ":sms:"
+    replace: "Dag \nHierbij het wachtwoord voor :\n\n\n\nMet vriendelijke groeten\nDCBaaS Team"
+
+  #  Print DCBaaS Domein aanmaken
+  - trigger: "DCBDomein"
+    replace: "Aangemaakt door de DCBaaS-beheerder om toekomstige toepassingsaanvragen met deze structuur automatisch te laten goedkeuren"
+
+  #  Print DCBaaS Domein aanmaken
+  - trigger: "dcbdomein"
+    replace: "Aangemaakt door de DCBaaS-beheerder om toekomstige toepassingsaanvragen met deze structuur automatisch te laten goedkeuren"
+
+  # Print Revoke DCBaaS
+  - trigger: "DCBRevoke"
+    replace: "The active certificates of the following devices have been revoked: | \n"
+
+  # Print Revoke DCBaaS
+  - trigger: "dcbrevoke"
+    replace: "The active certificates of the following devices have been revoked: | \n"
+
+  # Print Revoke DCBaaS
+  - trigger: "PKIRevoke"
+    replace: "The active certificates of the following devices have been revoked: | \n"
+
+  # Print Revoke DCBaaS
+  - trigger: "pkirevoke"
+    replace: "The active certificates of the following devices have been revoked: | \n"
+
+  # Print Revoke DCBaaS
+  - trigger: "pkir"
+    replace: "The active certificates of the following devices have been revoked: | \n"
+
+ # Print MAGDA Aanvraag Toepassing standaard tekst
+
+  - trigger: ":MAGDA:"
+    replace: "Aangemaakt op vraag van Magda Aansluitingen ({{datumpje}}, INC00)"
+    vars:
+      - name: datumpje
+        type: date
+        params:
+          format: "%d/%m/%Y"
+
+  # Print MAGDA Aanvraag Toepassing standaard tekst
+
+  - trigger: ":magda:"
+    replace: "Aangemaakt op vraag van Magda Aansluitingen ({{datumpje}}, INC00)"
+    vars:
+      - name: datumpje
+        type: date
+        params:
+          format: "%d/%m/%Y"
+
+    # Print Afsluiting MAGDA
+  - trigger: ":MAGDADone:"
+    replace: "Beste collega's\n\nWe hebben de volgende CN's geactiveerd voor :\n\n\nMet vriendelijke groeten"
+
+    # Print Afsluiting MAGDA
+  - trigger: ":magdadone:"
+    replace: "Beste collega's\n\nWe hebben de volgende CN's geactiveerd voor :\n\n\nMet vriendelijke groeten"
+
+    # Print .ignoreextension
+  - trigger: ":ig"
+    replace: ".ignoreextension"
+
+    # Print VOICA Afsluiten ticket
+  - trigger: "PKIDone"
+    replace: "OTS is verzonden en via mail het certificaat"
+
+    # Print VOICA Afsluiten ticket
+  - trigger: "pkidone"
+    replace: "OTS is verzonden en via mail het certificaat"
+
+  # Print Workflowbeheerder
+  - trigger: "wfb"
+    word: true
+    replace: "workflowbeheerder"
+  
+  # Print organisatie
+  - trigger: ":org"
+    word: true
+    replace: "organisatie"
+  
+  # Print DCBaaS Rollen
+  - trigger: "dcbrol"
+    word: true
+    replace: "https://vlaamseoverheid.atlassian.net/wiki/spaces/GAEP/pages/6377406688/Vo-DCBaaS+gebruiken#rollenbeheer"
+
+    # Print MVG M PO Team DO
+  - trigger: "mvgd"
+    replace: "Met vriendelijke groeten\nTeam DCBaaS"
+
+  # Print Domein geodgekeurd
+  - trigger: ":DOK:"
+    replace: "Domein goedgekeurd" 
+
+  # Print Domein goedgekeurd
+  - trigger: ";dok;"
+    replace: "Domein goedgekeurd" 
+
+  # Print Toepassing goedgekeurd
+  - trigger: ":TOK:"
+    replace: "Toepassing goedgekeurd" 
+
+  # Print Toepassing goedgekeurd
+  - trigger: ";tok;"
+    replace: "Toepassing goedgekeurd" 
+
+  # Print mail dcb cert
+  - trigger: ":MAILDCBAAS:"
+    word: true
+    replace: "Beste\n\nIn bijlage vind je het certificaat :\n\nMet vriendelijke groeten\nTeam DCBaaS"
+
+  # Print info over typering + waar info te vinden
+  - trigger: ":DCBaaSTypering:"
+    replace: "Beste\n\nWe hebben je organisatie toegang gegeven tot DCBaaS.\nVoor meer informatie kan je terecht op de volgende pagina:\nhttps://vlaamseoverheid.atlassian.net/wiki/spaces/GAEP/pages/6377406688/Vo-DCBaaS+gebruiken\n\nMet vriendelijke groeten\nTeam DCBaaS" 
+
+  - trigger: ":greet"
+    form: |
+      Hey [[name]],
+      Happy Birthday!
