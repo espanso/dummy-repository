@@ -167,7 +167,7 @@ matches:
 
   # Print DHM SH API Doc
   - trigger: "APISHDoc"
-    replace: "https://manuals.ascertia.com/SigningHub/8.2/Api/#tag/Welcome"
+    replace: "https://manuals.ascertia.com/SigningHub/8.4/Api/#tag/Welcome"
   
   # Print Aanvraag voor API integratie Digitale Handtekenmap
   - trigger: "PAPI"
@@ -179,24 +179,16 @@ matches:
     replace: "https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/veiligheidsbouwstenen-applicatie-en-platformdiensten/digitale-handtekenmap/praktisch-onderteken-digitaal#benodigdheden"
 
   # Print Handleidingen DHM
-  - trigger: "DHM-HL"
-    replace: "https://confluence.voalm.vlaanderen.be/pages/viewpage.action?pageId=92997935"
+  - trigger: "DO-PC"
+    replace: "https://vlaamseoverheid.atlassian.net/wiki/spaces/GAEP/pages/6377406908/Digitaal+Ondertekenen"
   
   # Print DHM interne Confluence
-  - trigger: "DHM-CI"
-    replace: "https://confluence.voalm.vlaanderen.be/pages/viewpage.action?spaceKey=APD&title=Handtekenmap"
+  - trigger: "DO-IC"
+    replace: "https://vlaamseoverheid.atlassian.net/wiki/spaces/APD/pages/6375738787/Digitaal+Ondertekenen+voor+Ondersteuners"
 
   # Print DHM Test pagina
   - trigger: "DO-Test"
     replace: "https://ksc-vo.keysign.eu/app/readers"
-  
-  # Print DHM Website
-  - trigger: "DHM-Web"
-    replace: "https://handtekenmap.vlaanderen.be"
-  
-  # Print DHM TI Website
-  - trigger: "DHM-TI-Web"
-    replace: "https://handtekenmap-ti.vlaanderen.be"
   
   # Print IDM Website
   - trigger: "IDM-Web"
